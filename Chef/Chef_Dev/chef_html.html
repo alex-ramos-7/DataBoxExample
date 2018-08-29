@@ -1,0 +1,328 @@
+<head>
+<link rel="stylesheet" href="color_themes.css">
+<style>
+/* Blank ID templates for CSS that we can fill in later*/
+/*
+#section1 {
+
+}
+#s1-1 {
+
+}
+#s1-2 {
+
+}
+#s1-3 {
+
+}
+#s1-4-desktop {
+
+}
+#s1-4-mobile {
+
+}
+#s1-5 {
+
+}
+*/
+
+/*
+#section2 {
+
+}
+#s2-1 {
+
+}
+#s2-2 {
+
+}
+#s2-3 {
+
+}
+#s2-4 {
+
+}
+#s2-5 {
+
+}
+#s2-6 {
+
+}
+#s2-7 {
+
+}
+#s2-8 {
+
+}
+#s2-9 {
+
+}
+*/
+
+/*
+#section3 {
+
+}
+#s3-1 {
+
+}
+#s3-2 {
+
+}
+#s3-3 {
+
+}
+#s3-4 {
+
+}
+#s3-5 {
+
+}
+#s3-6 {
+
+}
+#s3-7 {
+
+}
+*/
+
+/*
+#section4 {
+
+}
+#s4-1 {
+
+}
+#s4-2 {
+
+}
+#s4-3 {
+
+}
+#s4-4 {
+
+}
+*/
+
+/*
+#section5 {
+
+}
+#s5-1 {
+
+}
+#s5-2-desktop {
+
+}
+#s5-2-mobile {
+
+}
+*/
+
+/* We should probably have a class for looking at mobile only things */
+.mobile-only{display:none;}
+
+@media (max-width:768px){
+.mobile-only{display:block!important;}
+}
+
+@media (max-width:767px){
+.desktop-only{display:none!important;}
+}
+
+/* We should also have a class for desktop only things */
+.desktop-only {
+    margin: auto;
+}
+
+/*! CSS Used fontfaces, pulled these from the original CSS. We'll probably have to figure out where and how to use these */
+@font-face{font-family:SegoeUI;src:local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.svg#web) format("svg");font-weight:400;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Light"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.svg#web) format("svg");font-weight:100;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Semilight"),local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.svg#web) format("svg");font-weight:200;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Semibold"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.svg#web) format("svg");font-weight:600;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Bold"),local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.svg#web) format("svg");font-weight:700;}
+@font-face{font-family:MWF-MDL2;src:url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.woff) format("woff"),url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.ttf) format("truetype"),url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.svg) format("svg");}
+</style>
+</head>
+
+<body>
+<!-- Section 1 Hero Section -->
+<section class="theme-tan" id="section1">
+    <div>
+        <div>
+            <div id="s1-1">
+                <picture>
+                    <source srcset="img/AutomateLogoAsset17.png">
+                    <img src="img/AutomateLogoAsset17.png" alt="Chef Icon">
+                </picture>
+            </div>
+
+            <div>
+                <h1 id="s1-2">Want to experience firsthand how DevOps works using Chef Automate?</h1>
+                <p id="s1-3">Explore hands-on, guided scenarios in a live sandbox on Microsoft Azure today! Free. No set up or credit card required.</p>
+            </div>
+
+            <div class="desktop-only" id="s1-4-desktop">
+                <a href="">
+                <span>LAUNCH TEST DRIVE</span>
+                </a>
+            </div>
+
+            <div id="s1-4-mobile">
+                <p class="mobile-only">Take the Chef Automate Test Drive!</p>
+
+                <div class="mobile-only">
+                    <!-- This form needs to be updated -->
+                    <form action="" id="">
+                        <input type="text" id="email" placeholder="Enter your email" name="email" value="" style="color: rgb(0, 0, 0);">
+                        <div>
+                            <button type="button">SEND ME TEST DRIVE INVITE</button>
+                        </div>
+                        <p class="error" style="color: rgb(255, 42, 42);"></p>
+                        <p class="success" style="color: rgb(255, 255, 255);"></p>
+                        <p>*Test drive optimized for desktop, not mobile</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <picture id="s1-5">
+                <source media="" srcset="img/Azure Automate Screenshot.png">
+                <img src="img/Azure Automate Screenshot.png" alt="Hero Pic">
+        </picture>
+    </div>
+</section>
+
+<!-- Section 2 Highlights -->
+<section class="theme-black">
+    <div>
+        <h2 id="s2-1" class="theme-black accent">Effortless infrastructure. Automatically.</h2>
+        <p id="s2-2">With Automate, and its integrations with Chef’s open source engines InSpec, Chef, and Habitat, you have the tools to detect, correct, and automate 
+            your way to delivering software at the speed of business. Don’t just take our word for it, though — download a trial license today and find out how Automate can 
+            help your organization deploy changes with unparalleled speed and efficiency, while ensuring updates are validated and safe.</p>
+    </div>
+
+    <picture id="s2-3">
+            <source srcset="img/chefAutomate.png">
+            <img src="img/chefAutomate.png" alt="Chef Automate Horizontal Logo">
+    </picture>
+
+    <div>
+        <picture id="s2-4">
+            <source srcset="img/chef-logo.png">
+            <img srcset="img/chef-logo.png" src="img/chef-logo.png" alt="Chef Logo">
+        </picture>
+        <h3 id="s2-5">Infrastructure Automation</h3>
+    </div>
+
+    <div>
+        <picture id="s2-6">
+            <source srcset="img/habitat-logo.png">
+            <img srcset="img/habitat-logo.png" src="img/habitat-logo.png" alt="Habitat Logo">
+        </picture>
+        <h3 id="s2-7">Application Automation</h3>
+    </div>
+
+    <div>
+        <picture id="s2-8">
+            <source srcset="img/inspec-logo.png">
+            <img srcset="img/inspec-logo.png" src="img/inspec-logo.png" alt="Inspec Logo">
+        </picture>
+        <h3 id="s2-9">Compliance Automation</h3>
+    </div>
+</section>
+
+<!-- Section 3 Additional Info -->       
+<section class="theme-white">
+    <h1 id="s3-1" class="theme-white accent">A single source of truth for all your environments</h1>
+
+    <div id="s3-2">
+        <h3>Real-Time Data Across your Estate</h3>
+        <p>Chef Automate provides filterable dashboards collecting configuration and compliance details for every datacenter, 
+            cloud provider, and environment you manage in aggregated dashboards.</p>
+    </div>
+
+    <div id="s3-3">
+        <h3>Collaborate Effortlessly Between Teams</h3>
+        <p>Your organization’s development, operations, security, and compliance teams are all responsible for ensuring 
+            you deliver software safely and efficiently, and with Chef Automate all stakeholders can share a consistent 
+            view of how your environments are built and validated.</p>
+    </div>
+
+    <div id="s3-4">
+        <h3>Powerful Auditing Capabilities</h3>
+        <p>Chef Automate lets you create agentless compliance scans directly in the Web UI. Scan traditional servers, VMs, 
+            cloud instances, and SaaS solutions all in one place.</p>
+    </div>
+
+    <div id="s3-5">
+        <h3>Intelligent Access Controls</h3>
+        <p>Chef Automate integrates with LDAP and SAML based authentication so you can ensure the right teams have the right 
+            access using your existing access control solutions.</p>
+    </div>
+
+    <div id="s3-6">
+        <h3>Built-In Compliance Assets</h3>
+        <p>The Chef Automate asset store comes with a library of precreated InSpec profiles for validating software patches, 
+            system security, and evaluation against industry-standard frameworks like the CIS Benchmarks and DISA STIGs.</p>
+    </div>
+
+    <div id="s3-7">
+        <h3>Actionable Insights at Any Scale</h3>
+        <p>The release of Chef Automate 2.0 brings with it a modernized architecture for the Automate Server, providing the 
+            most responsive, intuitive Automate experience yet!</p>
+    </div>
+</section>
+
+<!-- Section 4 Learn Chef Rally -->
+<section>
+    <div>
+        <h2 id="s4-1">Build your skills</h2>
+        <p id="s4-2">Take the Azure and Chef Automate Track on Learn Chef Rally in our self-paced learning center! Dive into small bite modules or multi-course tracks.</p>
+        <div id="s4-3">
+            <a href="https://learn.chef.io/tracks/chef-on-azure#/">
+                <span>START LEARNING</span>
+            </a>
+        </div>
+    </div>
+
+    <picture id="s4-4">
+            <source srcset="img/chef-rally-banner-1300x600.jpg" media="(min-width: 1779px)">
+            <source srcset="img/chef-rally-banner-1300x600.jpg" media="(min-width: 1400px)">
+            <source srcset="img/chef-rally-banner-768x500.jpg" media="(min-width: 1084px)">
+            <source srcset="img/chef-rally-banner-768x500.jpg" media="(min-width:768px)">
+            <source srcset="img/chef-rally-banner-767x400.jpg" media="(min-width:540px)">
+            <source srcset="img/chef-rally-banner-575x300.jpg" media="(min-width:0)">
+            <img srcset="img/chef-rally-banner-1300x600.jpg" src="/img/chef-rally-banner-1300x600.jpg" alt="Chef Rally">
+    </picture>
+</section>
+
+<!-- Section 5 Closing Remark -->
+<section class="theme-tan">
+    <div>
+        <h2>With Chef Automate on Azure, you can enable continuous and compliance automation across your all of your infrastructure and application 
+            environments. Give Chef Automate on Azure a test drive today by clicking below! </h2>
+
+        <div class="desktop-only" id="s1-2-desktop">
+            <a href="">
+            <span>LAUNCH TEST DRIVE</span>
+            </a>
+        </div>
+
+        <div id="s1-4-mobile">
+            <div class="mobile-only">
+                <!-- This form needs to be updated -->
+                <form action="" id="">
+                    <input type="text" id="email" placeholder="Enter your email" name="email" value="" style="color: rgb(0, 0, 0);">
+                    <div>
+                        <button type="button">SEND ME TEST DRIVE INVITE</button>
+                    </div>
+                    <p class="error" style="color: rgb(255, 42, 42);"></p>
+                    <p class="success" style="color: rgb(255, 255, 255);"></p>
+                    <p>*Test drive optimized for desktop, not mobile</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>

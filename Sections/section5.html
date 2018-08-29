@@ -1,0 +1,68 @@
+<head>
+<link rel="stylesheet" href="color_themes.css">
+<style>
+/* Blank ID templates for CSS that we can fill in later*/
+/*
+
+#section5 {
+
+}
+#s5-1 {
+
+}
+#s5-2-desktop {
+
+}
+#s5-2-mobile {
+
+}
+*/
+
+/* We should probably have a class for looking at mobile only things */
+.mobile-only{display:none;}
+
+@media (max-width:768px){
+.mobile-only{display:block!important;}
+}
+
+@media (max-width:767px){
+.desktop-only{display:none!important;}
+}
+
+/* We should also have a class for desktop only things */
+.desktop-only {
+    margin: auto;
+}
+</style>
+</head>
+
+<body>
+<!-- Section 5 Closing Remark -->
+<section class="theme-tan">
+    <div>
+        <h2>With Chef Automate on Azure, you can enable continuous and compliance automation across your all of your infrastructure and application 
+            environments. Give Chef Automate on Azure a test drive today by clicking below! </h2>
+
+        <div class="desktop-only" id="s1-2-desktop">
+            <a href="">
+            <span>LAUNCH TEST DRIVE</span>
+            </a>
+        </div>
+
+        <div id="s1-4-mobile">
+            <div class="mobile-only">
+                <!-- This form needs to be updated -->
+                <form action="" id="">
+                    <input type="text" id="email" placeholder="Enter your email" name="email" value="" style="color: rgb(0, 0, 0);">
+                    <div>
+                        <button type="button">SEND ME TEST DRIVE INVITE</button>
+                    </div>
+                    <p class="error" style="color: rgb(255, 42, 42);"></p>
+                    <p class="success" style="color: rgb(255, 255, 255);"></p>
+                    <p>*Test drive optimized for desktop, not mobile</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>

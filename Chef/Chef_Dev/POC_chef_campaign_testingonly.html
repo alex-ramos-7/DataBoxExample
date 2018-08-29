@@ -1,0 +1,618 @@
+<style>
+img{border:0;}
+body{margin:0;}
+main,section{display:block;}
+a{background-color:transparent;}
+a:active,a:hover{outline:0;}
+h1{font-size:2em;margin:.67em 0;}
+button,input{color:inherit;font:inherit;margin:0;}
+button{overflow:visible;}
+button{text-transform:none;}
+button{-webkit-appearance:button;cursor:pointer;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+input{line-height:normal;}
+.c-heading-3{font-size:34px;line-height:40px;}
+.c-heading-4{font-size:24px;line-height:28px;}
+.c-heading-5,.c-paragraph-1{font-size:20px;line-height:24px;}
+.c-paragraph-3,.c-paragraph-4{font-size:15px;line-height:20px;}
+.c-heading-3{padding:38px 0 2px;font-weight:100;}
+.c-heading-4{padding:36px 0 4px;font-weight:200;}
+.c-heading-5{padding:35px 0 5px;font-weight:400;}
+.c-paragraph-1{padding:24px 0 4px;font-weight:200;}
+.c-paragraph-3{padding:24px 0 0;font-weight:400;}
+.c-paragraph-4{padding:12px 0 0;font-weight:400;}
+@media (max-width:767px){
+.c-heading-3{font-size:26px;line-height:32px;}
+.c-heading-4{font-size:20px;line-height:24px;}
+.c-heading-5,.c-paragraph-1{font-size:18px;line-height:24px;}
+.c-heading-5{padding:37px 0 3px;}
+}
+ul{padding:0;}
+body{font-size:15px;font-family:SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;min-width:320px;color:#000;background-color:#ffffff;}
+*,:after,:before{box-sizing:inherit;}
+.theme-dark{color:#000000;background-color:#333;}
+h1,h2,h3,p,ul{margin-top:0;margin-bottom:0;}
+ul{list-style:none;}
+img{vertical-align:middle;}
+a:active,a:focus,a:hover,a:link,a:visited{text-decoration:none;color:inherit;}
+input{border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+[data-grid~=container]{max-width:calc(1600px + 10%);margin:0 auto;padding-left:5%;padding-right:5%;}
+/*
+[data-grid~=container]{margin:0 auto;}
+*/
+@media screen and (max-width:1083px){
+[data-grid~=container]{padding-left:0;padding-right:0;}
+}
+[data-grid*=col-],[data-grid~=container]{box-sizing:border-box;zoom:1;}
+[data-grid*=col-]:after,[data-grid*=col-]:before,[data-grid~=container]:after,[data-grid~=container]:before{content:" ";display:table;}
+[data-grid*=col-]:after,[data-grid~=container]:after{clear:both;}
+[data-grid*=col-]{float:left;min-height:1px;}
+[data-grid~=pad-6x]>[data-grid]{padding-left:12px;padding-right:12px;}
+[data-grid~=col-3]{width:25%;}
+[data-grid~=col-4]{width:33.3333333333%;}
+[data-grid~=col-6]{width:50%;}
+[data-grid~=col-9]{width:75%;}
+[data-grid~=col-12]{width:100%;}
+@media screen and (max-width:767px){
+[data-grid~=stack-2]>[data-grid]{float:none;width:100%;display:block;padding:inherit 0;}
+}
+@media screen and (max-width:539px){
+[data-grid*=col-]{float:none;width:100%;display:block;padding:inherit 0;}
+}
+[class^=m-]{padding-left:12px;padding-right:12px;padding-top:48px;}
+@media only screen and (min-width:540px){
+[class^=m-]{padding-left:24px;padding-right:24px;}
+}
+@media only screen and (min-width:768px){
+[class^=m-]{padding-left:36px;padding-right:36px;}
+}
+@media only screen and (min-width:1400px){
+[class^=m-]{padding-left:48px;padding-right:48px;}
+}
+a.c-button[role=button],button.c-button{font-size:15px;max-width:374px;min-width:120px;display:inline-block;margin-top:12px;padding:9px 12px 10px;background-color:rgba(0,0,0,.2);color:#000;border:1px solid transparent;overflow:hidden;line-height:1;text-align:center;white-space:nowrap;vertical-align:bottom;outline:transparent dashed 1px;transition:scale .2s ease-in-out;}
+a.c-button[role=button]:focus:not(.x-hidden-focus),button.c-button:focus:not(.x-hidden-focus){outline:#000 solid 2px;text-decoration:underline;}
+a.c-button[role=button]:focus:not(.x-hidden-focus),a.c-button[role=button]:hover,button.c-button:focus:not(.x-hidden-focus),button.c-button:hover{background:rgba(0,0,0,.3);}
+a.c-button[role=button]:active,button.c-button:active{background:rgba(0,0,0,.4);-ms-transform:scale(.98);transform:scale(.98);}
+.theme-dark button.c-button{background-color:transparent;color:#f4f4f4;border-color:#f4f4f4;}
+.theme-dark button.c-button:focus{outline:#f4f4f4 solid 1px;}
+.theme-dark button.c-button:focus:not(.x-hidden-focus),.theme-dark button.c-button:hover{background:#1a1a1a;}
+.theme-dark button.c-button:active{background:#000;}
+a.c-call-to-action{font-size:13px;display:inline-block;max-width:100%;padding:10px 22px 7px 24px;overflow:hidden;border:2px solid transparent;color:#f4f4f4;background:#0078d7;line-height:1.3;text-decoration:none;text-align:center;letter-spacing:.075em;white-space:nowrap;transition:scale .2s ease-in-out;}
+a.c-call-to-action span{display:inline-block;max-width:100%;text-overflow:clip;overflow:hidden;}
+a.c-call-to-action:after{display:inline-block;margin-left:4px;margin-top:1px;content:"";vertical-align:top;}
+a.c-call-to-action:focus:not(.x-hidden-focus){outline:#000 solid 2px;}
+a.c-call-to-action:focus:not(.x-hidden-focus) span{text-decoration:underline;}
+a.c-call-to-action:focus:not(.x-hidden-focus),a.c-call-to-action:hover{background:#1a5b94;}
+a.c-call-to-action:active{background:#1a5b94;-ms-transform:scale(.98);transform:scale(.98);}
+.theme-dark a.c-call-to-action{color:#ffffff;background:#0078d7;}
+.theme-dark a.c-call-to-action:focus:not(.x-hidden-focus){outline-color:#000;}
+.theme-dark a.c-call-to-action:focus:not(.x-hidden-focus),.theme-dark a.c-call-to-action:hover{background:#1a5b94;}
+.theme-dark a.c-call-to-action:active{background:#ccc;}
+.c-group{display:-ms-flexbox;display:flex;position:relative;-ms-flex-wrap:nowrap;flex-wrap:nowrap;padding:1px;}
+.c-group>.c-call-to-action{margin-right:4px;}
+@media only screen and (min-width:320px){
+.c-group button.c-button{margin-right:4px;}
+}
+@media only screen and (min-width:540px){
+.c-group button.c-button{margin-right:8px;}
+}
+[class^=c-heading-]:after,[class^=c-heading-]:before{content:" ";display:table;}
+[class^=c-heading-]:after{clear:both;}
+.c-glyph:after,.c-glyph:before{font-family:MWF-MDL2;display:inline-block;}
+.c-glyph:after,.c-glyph:before,.c-glyph:hover:after,.c-glyph:hover:before{text-decoration:none;}
+.c-list{font-size:15px;line-height:20px;padding-left:19px;padding-right:0;margin:8px 0;list-style-position:outside;}
+.c-list li{padding:8px 0;}
+.c-list.f-lean li{padding:0;}
+ul.c-list{list-style-type:disc;}
+input.c-text-field[type=text]{display:block;width:296px;height:36px;margin-top:20px;padding:7px 10px;border:1px solid rgba(0,0,0,.6);outline:0;background:#f4f4f4;}
+@media only screen and (max-width:539px){
+input.c-text-field[type=text]{width:100%;}
+}
+input.c-text-field[type=text].f-flex{width:100%;min-width:88px;max-width:100%;}
+input.c-text-field[type=text]:hover{border-color:rgba(0,0,0,.8);}
+input.c-text-field[type=text]:active,input.c-text-field[type=text]:focus{border-color:#0067B8;}
+input.c-text-field[type=text]::-webkit-input-placeholder{color:rgba(0,0,0,.6);}
+input.c-text-field[type=text]::-moz-placeholder{color:rgba(0,0,0,.6);}
+input.c-text-field[type=text]:-ms-input-placeholder{color:rgba(0,0,0,.6);}
+input.c-text-field[type=text]::placeholder{color:rgba(0,0,0,.6);}
+.m-content-placement-item{padding-left:0;padding-right:0;padding-top:0;margin-top:48px;}
+.m-content-placement-item .c-heading{font-size:20px;line-height:24px;font-weight:400;padding-top:12px;padding-bottom:2px;}
+.m-content-placement-item .c-paragraph{padding-top:2px;}
+.m-content-placement-item .c-heading,.m-content-placement-item .c-paragraph{padding-right:12px;}
+.m-content-placement-item>picture{display:block;position:relative;overflow:hidden;}
+.m-content-placement-item>picture img{position:relative;width:100%;height:auto;}
+@media only screen and (max-width:539px){
+.m-content-placement-item .c-heading{font-size:18px;line-height:24px;font-weight:400;}
+}
+.m-hero-item{position:relative;overflow:hidden;padding:0 5%;width:100%;}
+.m-hero-item:before{display:block;content:"";width:100%;padding-top:41.5%;}
+@media only screen and (max-width:1083px){
+.m-hero-item:before{padding-top:60.2%;}
+}
+.m-hero-item:hover{cursor:default;}
+.m-hero-item[data-js-href]:hover{cursor:pointer;}
+.m-hero-item picture{display:block;}
+.m-hero-item>picture{position:absolute;top:0;left:0;bottom:0;z-index:0;width:100%;overflow:hidden;}
+.m-hero-item>picture img{position:absolute;width:100%;left:0;top:calc(50%);-ms-transform:translateY(-50%);transform:translateY(-50%);overflow:hidden;}
+.m-hero-item>picture:after{content:"";display:block;position:relative;z-index:1;width:100%;height:100%;}
+.m-hero-item>div{width:88%;height:100%;max-width:2048px;position:absolute;top:0;bottom:0;left:0;right:0;z-index:1;margin:0 auto;overflow:hidden;}
+.m-hero-item .c-group>.c-call-to-action{margin-right:24px;}
+@media only screen and (max-width:767px){
+.m-hero-item>div{position:relative;}
+}
+.m-hero-item>div>div{position:absolute;z-index:1;max-width:520px;}
+.m-hero-item>div>div>div{margin-top:24px;padding:0 2px;}
+.m-hero-item .c-subheading{font-size:24px;line-height:28px;padding:4px 0 2.36px;font-weight:200;overflow:hidden;box-sizing:content-box;max-height:56px;}
+@media only screen and (max-width:1399px){
+.m-hero-item .c-subheading{font-size:15px;line-height:20px;padding:8px 0 0;font-weight:400;max-height:40px;}
+}
+@media only screen and (max-width:767px){
+.m-hero-item .c-subheading{font-size:18px;line-height:24px;padding:9px 0 3px;font-weight:400;overflow:hidden;box-sizing:content-box;max-height:48px;}
+}
+.m-hero-item .c-group{display:block;overflow:visible;}
+.m-hero-item.f-x-left>div>div{left:0;}
+.m-hero-item.f-y-center>div>div{top:120px;top:calc(50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
+@media only screen and (max-width:1399px){
+.m-hero-item>div>div{max-width:440px;}
+}
+@media only screen and (max-width:1083px){
+.m-hero-item>div>div{max-width:340px;}
+}
+@media only screen and (max-width:767px){
+.m-hero-item .c-subheading,.m-hero-item>div picture,.m-hero-item[class*=f-x][class*=f-y]>picture:after{display:none;}
+.m-hero-item{height:auto;padding:0;text-align:center;}
+.m-hero-item[class*=f-x][class*=f-y]>picture img{top:0;left:0;left:calc(50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}
+.m-hero-item[class*=f-x][class*=f-y]>div>div{position:relative;margin:0 auto;left:0;top:0;top:calc(50%);-ms-transform:translateY(-50%);transform:translateY(-50%);max-width:100%;}
+.m-hero-item>div{padding:12px;height:280px;}
+.m-hero-item>div>div>div{-ms-flex-pack:center;justify-content:center;}
+.m-hero-item .c-group>.c-call-to-action{margin:0;}
+}
+[class^=m-]+.m-hero-item{margin-top:48px;float:left;clear:both;}
+.m-banner{text-align:center;}
+.m-banner{display:block;clear:both;float:none;max-width:1000px;margin:0 auto;}
+.m-banner a.c-call-to-action{background:0 0;color:#0067B8;border-color:transparent;border-width:2px;padding:10px 16px 7px 0;margin-left:0;transition:none;}
+.m-banner a.c-call-to-action:active,.m-banner a.c-call-to-action:focus:not(.x-hidden-focus),.m-banner a.c-call-to-action:hover{background:0 0;outline:transparent;border-color:transparent;}
+.m-banner a.c-call-to-action:focus:not(.x-hidden-focus){background:content-box rgba(0,103,184,.1);}
+.m-banner a.c-call-to-action:focus:not(.x-hidden-focus),.m-banner a.c-call-to-action:hover{color:#005da6;}
+.m-banner a.c-call-to-action:active{background:0 0;color:#005293;text-decoration:none;-ms-transform:none;transform:none;}
+.m-banner a.c-call-to-action:focus:not(.x-hidden-focus) span,.m-banner a.c-call-to-action:hover span{text-decoration:underline;}
+.m-content-placement{padding-left:0;padding-right:0;padding-top:0;}
+@media only screen and (min-width:540px){
+.m-content-placement{padding-left:12px;padding-right:12px;}
+}
+@media only screen and (min-width:768px){
+.m-content-placement{padding-left:24px;padding-right:24px;}
+}
+@media only screen and (min-width:1400px){
+.m-content-placement{padding-left:36px;padding-right:36px;}
+}
+.m-rich-content-block[data-grid~=pad-6x]{padding-left:0;padding-right:0;}
+@media only screen and (min-width:540px){
+.m-rich-content-block[data-grid~=pad-6x]{padding-left:12px;padding-right:12px;}
+}
+@media only screen and (min-width:768px){
+.m-rich-content-block[data-grid~=pad-6x]{padding-left:24px;padding-right:24px;padding-top:48px;}
+}
+@media only screen and (min-width:1400px){
+.m-rich-content-block[data-grid~=pad-6x]{padding-left:36px;padding-right:36px;}
+}
+.m-social{padding:0;}
+.m-social{display:block;margin-top:48px;}
+.m-social>span{font-size:15px;line-height:20px;color:rgba(0,0,0,.6);padding-right:12px;margin-bottom:4px;}
+.m-social>ul>li>a{position:relative;width:32px;height:32px;transition:scale .2s ease-in-out;}
+@media screen and (-ms-high-contrast:active){
+.m-social>ul>li>a{-ms-high-contrast-adjust:background;background:#f4f4f4;}
+}
+.m-social>ul>li>a:focus{outline:#000 solid 2px;}
+.m-social.f-share ul>li>a:active{outline:0;}
+.m-social>ul>li>a:focus:before,.m-social>ul>li>a:hover:before{background:rgba(0,0,0,.1);}
+@media screen and (-ms-high-contrast:active){
+.m-social>ul>li>a:focus:before,.m-social>ul>li>a:hover:before{background:0 0;}
+}
+.m-social>ul>li>a:active{-ms-transform:scale(.98);transform:scale(.98);}
+.m-social>ul>li>a:active:before{background:rgba(0,0,0,.2);}
+.m-social>ul>li>a:before{background:0 0;content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;}
+@media screen and (-ms-high-contrast:active){
+.m-social.f-share ul>li>a:hover:before{background:0 0;}
+}
+.m-social.f-horizontal{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;}
+.m-social.f-horizontal ul>li>a{display:inline-block;margin-right:12px;}
+.m-social.f-horizontal ul>li{float:left;}
+@media only screen and (max-width:767px){
+.m-social{margin-top:36px;}
+}
+/*! CSS Used from: http://test-drive-now.azurewebsites.net/css/style.css */
+.chef-icons,.video-cta{text-align:center;}
+.c-azure-badge,.f-with-video>div,.video-cta{transition:opacity .2s;}
+.m-banner{clear:both;}
+input.c-text-field[type=text].f-flex{width:100%;min-width:88px;max-width:100%;}
+.c-mobile-show{display:none!important;}
+.c-mobile-show .c-group{margin-bottom:12px;}
+@media (max-width:767px){
+.c-desktop-show{display:none!important;}
+.c-mobile-show{display:block!important;}
+.c-mobile-show input{margin-bottom:16px;}
+}
+.m-hero-item .c-paragraph-3{padding-top:6px!important;}
+.m-hero-item.context-app .c-subheading{max-height:none;}
+.chef-rally.m-hero-item.f-y-center>div>div{padding:24px;background:#f4f4f4;}
+.m-banner{padding-bottom:72px;}
+.chef-icons img{width:auto!important;height:120px!important;}
+a.c-call-to-action{padding:10px 24px 7px!important;}
+a.c-call-to-action:after{display:none!important;}
+.c-paragraph-3.c-subheading{font-size:20px!important;line-height:26px!important;}
+@media only screen and (max-width:767px){
+.m-hero-item>div{height:auto!important;}
+.m-hero-item[class*=f-x][class*=f-y]>div>div{position:static!important;transform:none!important;}
+}
+.m-hero-item:before{padding-top:41.6%!important;}
+.f-mobile-only{display:none;}
+@media (max-width:768px){
+.m-hero-item:before{padding-top:37.5%!important;}
+.f-mobile-only{display:block!important;}
+}
+.f-with-video:before{padding-top:41.6%!important;}
+@media (max-width:768px){
+.f-with-video:before{padding-top:37.5%!important;}
+}
+.f-with-video>div{z-index:31!important;}
+.video-cta{position:absolute;top:0;left:0;right:0;padding:8px 24px;z-index:32;overflow:hidden;opacity:0;pointer-events:none;background:#445F6F;}
+.video-cta p{line-height:36px;padding-top:0!important;color:#f4f4f4;}
+.video-cta .c-button{margin-top:0!important;margin-left:12px;background:#0A66B8!important;color:#f4f4f4!important;}
+.c-azure-badge{position:absolute;right:24px;bottom:18px;z-index:33;}
+.logo-wrap{overflow:hidden;}
+@media only screen and (max-width:767px){
+.c-azure-badge,.logo-wrap{display:none!important;}
+}
+.logo-wrap h2{padding-top:0;padding-left:18px;float:left;line-height:48px;border-left:1px solid #000000;margin-left:24px;}
+.logo-wrap picture{float:left;}
+@media only screen and (max-width:1083px){
+.m-hero-item>div>div{max-width:440px!important;}
+}
+.m-hero-item>div>div{max-width:640px!important;}
+@media only screen and (max-width:1400px){
+.m-hero-item>div>div{max-width:530px!important;}
+}
+@media only screen and (max-width:1024px){
+.m-hero-item>div>div{max-width:440px!important;}
+.m-hero-item .c-heading-3{font-size:25px;line-height:27px;}
+.m-hero-item .c-paragraph-3.c-subheading{font-size:16px!important;line-height:22px!important;}
+}
+.m-hero-item .m-social{position:absolute;right:24px;top:24px;z-index:200;}
+.m-hero-item .m-social span{color:#f4f4f4;}
+.m-foot{padding-bottom:48px!important;border-top:1px solid #ddd;}
+.m-foot img{margin-bottom:60px;}
+.m-foot p{color:#777!important;font-size:13px!important;line-height:17px!important;padding-top:0;margin-bottom:18px;}
+.m-foot ul li{float:left;font-size:13px;line-height:17px;padding-right:24px;}
+.m-foot ul li a{font-weight:500;}
+.m-hero-item{cursor:default!important;}
+.m-banner .m-social ul{text-align:center!important;}
+.m-banner .m-social span{padding-right:0!important;padding-bottom:6px!important;display:block!important;}
+.m-banner .m-social li{float:none!important;display:inline-block!important;}
+.m-banner .m-social a{margin-left:6px!important;margin-right:6px!important;}
+.m-banner{max-width:none!important;}
+.m-banner [class^=c-paragraph]{max-width:768px;margin:0 auto;}
+.m-content-placement-item{padding-left:0;padding-right:0;padding-top:0;margin-top:48px;}
+.m-content-placement-item .c-heading{font-size:20px;line-height:24px;font-weight:400;padding-top:12px;padding-bottom:2px;}
+.m-content-placement-item .c-paragraph{padding-top:2px;}
+.m-content-placement-item .c-heading,.m-content-placement-item .c-paragraph{padding-right:12px;}
+.m-content-placement-item>picture{display:block;position:relative;overflow:hidden;}
+.m-content-placement-item>picture img{position:relative;width:100%;height:auto;}
+@media only screen and (max-width:539px){
+.m-content-placement-item .c-heading{font-size:18px;line-height:24px;font-weight:400;}
+}
+.m-hero-item{position:relative;overflow:hidden;padding:0 5%;width:100%;}
+.m-hero-item:before{display:block;content:"";width:100%;}
+@media only screen and (max-width:1083px){
+.m-hero-item:before{padding-top:60.2%;}
+}
+.m-hero-item:hover{cursor:default;}
+.m-hero-item[data-js-href]:hover{cursor:pointer;}
+.m-hero-item picture{display:block;}
+.m-hero-item>picture{position:absolute;top:0;left:0;bottom:0;z-index:0;width:100%;overflow:hidden;}
+.m-hero-item>picture img{position:absolute;width:100%;left:0;top:calc(50%);-ms-transform:translateY(-50%);transform:translateY(-50%);overflow:hidden;}
+.m-hero-item>picture:after{content:"";display:block;position:relative;z-index:1;width:100%;height:100%;}
+.m-hero-item>div{width:88%;height:100%;max-width:2048px;position:absolute;top:0;bottom:0;left:0;right:0;z-index:1;margin:0 auto;overflow:hidden;}
+.m-hero-item .c-group>.c-call-to-action{margin-right:24px;}
+@media only screen and (max-width:767px){
+.m-hero-item>div{position:relative;}
+}
+.m-hero-item>div>div{position:absolute;z-index:1;}
+.m-hero-item>div>div>div{margin-top:24px;padding:0 2px;}
+.m-hero-item .c-subheading{font-size:24px;line-height:28px;padding:4px 0 2.36px;font-weight:200;overflow:hidden;box-sizing:content-box;max-height:56px;}
+@media only screen and (max-width:1399px){
+.m-hero-item .c-subheading{font-size:15px;line-height:20px;padding:8px 0 0;font-weight:400;max-height:40px;}
+}
+@media only screen and (max-width:767px){
+.m-hero-item .c-subheading{font-size:18px;line-height:24px;padding:9px 0 3px;font-weight:400;overflow:hidden;box-sizing:content-box;max-height:48px;}
+}
+.m-hero-item .c-group{display:block;overflow:visible;}
+.m-hero-item.f-x-left>div>div{left:0;}
+.m-hero-item.f-y-center>div>div{top:120px;top:calc(50%);-ms-transform:translateY(-50%);transform:translateY(-50%);}
+@media only screen and (max-width:1399px){
+.m-hero-item>div>div{max-width:440px;}
+}
+@media only screen and (max-width:1083px){
+.m-hero-item>div>div{max-width:340px;}
+}
+@media only screen and (max-width:767px){
+.m-hero-item .c-subheading,.m-hero-item>div picture,.m-hero-item[class*=f-x][class*=f-y]>picture:after{display:none;}
+.m-hero-item{height:auto;padding:0;text-align:center;}
+.m-hero-item[class*=f-x][class*=f-y]>picture img{top:0;left:0;left:calc(50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}
+.m-hero-item[class*=f-x][class*=f-y]>div>div{position:relative;margin:0 auto;left:0;top:0;top:calc(50%);-ms-transform:translateY(-50%);transform:translateY(-50%);max-width:100%;}
+.m-hero-item>div{padding:12px;height:280px;}
+.m-hero-item>div>div>div{-ms-flex-pack:center;justify-content:center;}
+.m-hero-item .c-group>.c-call-to-action{margin:0;}
+}
+[class^=m-]+.m-hero-item{margin-top:48px;float:left;clear:both;}
+.m-banner{text-align:center;}
+.m-banner{display:block;float:none;margin:0 auto;}
+.m-banner a.c-call-to-action{background:0 0;color:#0067B8;border-color:transparent;border-width:2px;padding:10px 16px 7px 0;margin-left:0;transition:none;}
+.m-banner a.c-call-to-action:active,.m-banner a.c-call-to-action:focus:not(.x-hidden-focus),.m-banner a.c-call-to-action:hover{background:0 0;outline:transparent;border-color:transparent;}
+.m-banner a.c-call-to-action:focus:not(.x-hidden-focus){background:content-box rgba(0,103,184,.1);}
+.m-banner a.c-call-to-action:focus:not(.x-hidden-focus),.m-banner a.c-call-to-action:hover{color:#005da6;}
+.m-banner a.c-call-to-action:active{background:0 0;color:#005293;text-decoration:none;-ms-transform:none;transform:none;}
+.m-banner a.c-call-to-action:focus:not(.x-hidden-focus) span,.m-banner a.c-call-to-action:hover span{text-decoration:underline;}
+.m-content-placement{padding-left:0;padding-right:0;padding-top:0;}
+@media only screen and (min-width:540px){
+.m-content-placement{padding-left:12px;padding-right:12px;}
+}
+@media only screen and (min-width:768px){
+.m-content-placement{padding-left:24px;padding-right:24px;}
+}
+@media only screen and (min-width:1400px){
+.m-content-placement{padding-left:36px;padding-right:36px;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:SegoeUI;src:local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.svg#web) format("svg");font-weight:400;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Light"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.svg#web) format("svg");font-weight:100;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Semilight"),local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.svg#web) format("svg");font-weight:200;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Semibold"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.svg#web) format("svg");font-weight:600;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Bold"),local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.svg#web) format("svg");font-weight:700;}
+@font-face{font-family:MWF-MDL2;src:url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.woff) format("woff"),url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.ttf) format("truetype"),url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.svg) format("svg");}
+</style>
+<div id="main-container">
+    <main class="content-wrap" data-grid="container">
+        <section class="m-hero-item f-x-left f-y-center context-app theme-dark m-hero-main f-with-video" itemscope="" itemtype="http://schema.org/SoftwareApplication"
+            data-js-href="http://test-drive-now.azurewebsites.net/chef#" style="background-color: rgb(244, 244, 244);">
+            <picture>
+                <source srcset="img/hero-banner-test.png" media="(min-width:0)">
+                <img src="img/hero-banner-test.png">
+            </picture>
+
+            <!--
+            <picture>
+                <source srcset="img/hero-image.png" media="(min-width:0)">
+                <img src="img/hero-image.png">
+            </picture>
+            -->
+
+
+            <!--
+            <section class="m-social f-horizontal f-share c-desktop-show" itemscope="" itemtype="http://schema.org/Organization"
+                style="justify-content: center; margin-top: 0px;">
+                <span>Share this page</span>
+                <ul>
+                    <li>
+                        <a class="fb-xfbml-parse-ignore" itemprop="sameAs" aria-label="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftest-drive-now.azurewebsites.net%2Fchef/?title=Chef%20Test%20Drive&amp;amp;src=sdkpreparse">
+                            <picture>
+                                <source type="image/svg+xml" srcset="img/facebook-gray.svg">
+                                <img src="img/facebook-gray.png" alt="Facebook logo">
+                            </picture>
+                        </a>
+                    </li>
+                    <li>
+                        <a itemprop="sameAs" aria-label="Share on Twitter" target="_blank" href="https://twitter.com/share">
+                            <picture>
+                                <source type="image/svg+xml" srcset="img/twitter-gray.svg">
+                                <img src="img/twitter-gray.png" alt="Twitter logo">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            -->
+            <!--
+            <section class="c-azure-badge">Microsoft Azure</section>
+            -->
+            <section class="c-azure-badge"></section>
+            <div>
+                <div>
+                    <div class="logo-wrap">
+                        <picture>
+                            <source srcset="img/chef-logo-color.png" media="(min-width:0)">
+                            <img src="img/chef-logo-color.png" alt="Chef Icon" style="height: 48px;">
+                        </picture>
+                        <h2 class="c-heading-4">Test Drive</h2>
+                    </div>
+                    <h1 class="c-heading-3">Want to experience firsthand how DevOps works using Chef Automate?</h1>
+                    <p class="c-paragraph-3 c-subheading" style="display: block !important;">Explore hands-on, guided scenarios in a live sandbox on Microsoft Azure today! Free. No set up or credit
+                        card required.</p>
+                    <p class="c-paragraph-4 c-subheading f-mobile-only">Take the Chef Automate Test Drive!</p>
+                    <div class="c-desktop-show">
+                        <div class="c-group">
+                            <a class="c-call-to-action c-glyph" href="#">
+                                <span class="launch-test-drive-button">LAUNCH TEST DRIVE</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c-mobile-show">
+                        <form action="/send-link" id="test-drive-form">
+                            <input type="text" class="c-text-field f-flex" id="email" placeholder="Enter your email" name="email"
+                                value="" style="color: rgb(0, 0, 0);">
+                            <div class="c-group">
+                                <button class="c-button f-primary" name="button">SEND ME TEST DRIVE INVITE</button>
+                            </div>
+                            <p class="error c-paragraph-3" style="color: rgb(255, 42, 42);"></p>
+                            <p class="success c-paragraph-3" style="color: rgb(255, 255, 255);"></p>
+                            <p class="c-paragraph-3">*Test drive optimized for desktop, not mobile</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m-banner" data-grid="col-12" style="background: rgb(255, 255, 255); position: relative;">
+            <section class="video-cta">
+                <p class="c-paragraph-3" style="display: inline-block;">Ready to get started?</p>
+                <a class="c-button f-primary launch-test-drive-button" href="#" role="button">LAUNCH TEST DRIVE NOW</a>
+            </section>
+            <!--
+            <div class="m-social f-horizontal f-share c-mobile-show" itemscope="" itemtype="http://schema.org/Organization"
+                style="justify-content: center; margin-top: 0px; padding-bottom: 48px; overflow: hidden;">
+                <span>Share this page</span>
+                <ul>
+                    <li>
+                        <a class="fb-xfbml-parse-ignore" itemprop="sameAs" aria-label="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=u=http%3A%2F%2Ftest-drive-now.azurewebsites.net%2Fchef/?title=Chef%20Test%20Drive&amp;amp;src=sdkpreparse">
+                            <picture>
+                                <source type="image/svg+xml" srcset="img/social/facebook-gray-2.svg">
+                                <img src="img/social/facebook-gray-2.png" alt="Facebook logo">
+                            </picture>
+                        </a>
+                    </li>
+                    <li>
+                        <a itemprop="sameAs" aria-label="Share on Twitter" target="_blank" href="https://twitter.com/share">
+                            <picture>
+                                <source type="image/svg+xml" srcset="img/social/twitter-gray-2.svg">
+                                <img src="img/social/twitter-gray-2.png" alt="Twitter logo">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            -->
+            <h2 class="c-heading-4">Deliver software at speed</h2>
+            <p class="c-paragraph-3" style="margin-bottom: 18px;">Whether you have five or five thousand servers, Chef Automate manages changes to both infrastructure and application
+                code, giving your operations and development teams a common platform for developing, testing, and deploying
+                cookbooks, applications, and more.</p>
+            <p class="c-paragraph-3">Chef Automate on Microsoft Azure gives your operations, development, security and compliance teams a common platform
+                that takes advantage of the flexibility, scalability, and reliability that Azure offers.</p>
+        </section>
+        <section class="m-banner theme-dark" data-grid="col-12" style="background: rgb(0, 0, 0); padding-bottom: 0px;">
+            <h2 class="c-heading-4" style="color: rgb(0,120,215);">Deliver all your infrastructure, any app, everywhere. Continuously.</h2>
+            <p class="c-paragraph-3" style="color: rgb(255, 255, 255);">Your organization has a complex combination of cloud-based and on-premises apps and infrastructure. It’s slowing
+                you down. Chef Automate helps overcome complexity to build, manage, and deploy better, faster, and safer.</p>
+        </section>
+        <div class="m-content-placement theme-dark chef-icons" data-grid="col-12" style="background: rgb(0, 0, 0); padding-bottom: 48px;">
+            <div data-grid="col-12 stack-2" style="color: #ffffff">
+                <div data-grid="col-4 pad-6x">
+                    <div data-grid="col-12">
+                        <section class="m-content-placement-item f-size-medium">
+                            <picture>
+                                <img srcset="img/chef-icon-speed_recolored.svg" src="img/chef-icon-speed_recolored.svg" alt="">
+                            </picture>
+                            <div>
+                                <h3 class="c-heading">Speed</h3>
+                                <p class="c-paragraph">Commit to deploy in minutes.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div data-grid="col-4 pad-6x">
+                    <div data-grid="col-12">
+                        <section class="m-content-placement-item f-size-medium">
+                            <picture>
+                                <img srcset="img/chef-icon-efficiency_recolored.svg" src="img/chef-icon-efficiency_recolored.svg" alt="">
+                            </picture>
+                            <div>
+                                <h3 class="c-heading">Efficiency</h3>
+                                <p class="c-paragraph">Decrease failure rates by 50%.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div data-grid="col-4 pad-6x">
+                    <div data-grid="col-12">
+                        <section class="m-content-placement-item f-size-medium">
+                            <picture>
+                                <img srcset="img/chef-icon-risk_recolored.svg" src="img/chef-icon-risk_recolored.svg" alt="">
+                            </picture>
+                            <div>
+                                <h3 class="c-heading">Risk</h3>
+                                <p class="c-paragraph">On-Demand Compliance Audits.</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-rich-content-block" data-grid="col-12 pad-6x stack-2" style="margin-bottom: 48px;">
+            <div data-grid="col-6">
+                <h2 class="c-paragraph-1">What is a Test Drive?</h2>
+                <p class="c-paragraph-3" style="padding-top: 8px;">Azure Marketplace Test Drives make it easy for you to learn and evaluate software running on Azure. No setup,
+                    no credit card, no subscription needed. Just click and go. You’ll be exploring guided scenarios in a
+                    live sandbox in just minutes.</p>
+            </div>
+            <div data-grid="col-6">
+                <p class="c-paragraph-1">The Chef Automate Test Drive will enable you to:</p>
+                <ul class="c-list f-lean">
+                    <li>Identify vulnerable servers</li>
+                    <li>Reproduce errors in test environments</li>
+                    <li>Apply remediation across a server fleet and confirm exploit mitigation</li>
+                </ul>
+            </div>
+        </div>
+        <section class="m-hero-item f-x-left f-y-center context-app chef-rally" itemscope="" data-js-href="https://learn.chef.io/?"
+            style="background-color: rgb(33, 114, 185); margin-top: 0px;">
+            
+            <picture>
+                <source srcset="img/chef-rally-banner-1300x600.jpg" media="(min-width: 1779px)">
+                <source srcset="img/chef-rally-banner-1300x600.jpg" media="(min-width: 1400px)">
+                <source srcset="img/chef-rally-banner-768x500.jpg" media="(min-width: 1084px)">
+                <source srcset="img/chef-rally-banner-768x500.jpg" media="(min-width:768px)">
+                <source srcset="img/chef-rally-banner-767x400.jpg" media="(min-width:540px)">
+                <source srcset="img/chef-rally-banner-575x300.jpg" media="(min-width:0)">
+                <img srcset="img/chef-rally-banner-1300x600.jpg" src="/img/chef-rally-banner-1300x600.jpg" alt="Chef Rally">
+            </picture>
+            
+            <div>
+                <div>
+                    <h2 class="c-heading-5">Build your skills</h2>
+                    <p class="c-paragraph-3">Learn all about Chef Continuous Automation and DevOps in our self-paced learning center. Dive into small
+                        bite modules or multi-course tracks.</p>
+                    <div class="c-group">
+                        <a class="c-call-to-action c-glyph" href="https://learn.chef.io/?">
+                            <span>START LEARNING</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m-banner" data-grid="col-12" style="background-color: rgb(244, 244, 244);">
+            <h2 class="c-heading-4">Follow Azure Marketplace on Twitter</h2>
+            <a class="c-call-to-action c-glyph" href="https://twitter.com/azuremktplace/?">
+                <span>CHECK US OUT</span>
+            </a>
+        </section>
+        <!--
+        <div class="m-rich-content-block m-foot" data-grid="col-12 pad-6x stack-2">
+            <div data-grid="col-3">
+                <picture>
+                    <source srcset="img/chef-logo-color.png" media="(min-width:0)">
+                    <img src="img/chef-logo-color.png" alt="chef Logo">
+                </picture>
+                <p class="c-paragraph-4">© 2017 Microsoft Corporation. All rights reserved.</p>
+            </div>
+            <div data-grid="col-9">
+                <p class="c-paragraph-4">This site is being hosted on behalf of Microsoft by
+                    <a href="http://www.easci.com" style="color: rgb(68, 68, 68);">Extreme Arts &amp; Sciences</a>.</p>
+                <p class="c-paragraph-4">This site is jointly operated by Microsoft and Chef, and both companies are committed to protecting your
+                    privacy. Any personal information we collect from you on this site may be shared between Microsoft and
+                    Chef. For complete information on the data collection and use practices of each company, please read
+                    the full privacy statements by clicking on the links below.</p>
+                <ul>
+                    <li>
+                        <a href="https://privacy.microsoft.com/en-us/privacystatement">Microsoft Privacy &amp; Cookies</a>
+                    </li>
+                    <li>
+                        <a href="https://www.chef.io/privacy-policy/">Chef Privacy Statement</a>
+                    </li>
+                    <li>
+                        <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </main>
+</div>

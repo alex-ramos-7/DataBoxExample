@@ -1,0 +1,236 @@
+<head>
+<link rel="stylesheet" href="color_themes.css">
+<style>
+/* Blank ID templates for CSS that we can fill in later*/
+/*
+#section1 {
+
+}
+#s1-1 {
+
+}
+#s1-2 {
+
+}
+#s1-3 {
+
+}
+*/
+
+/*
+#section2 {
+
+}
+#s2-1 {
+
+}
+#s2-2A {
+
+}
+#s2-2B {
+
+}
+#s2-2C {
+
+}
+#s2-2D {
+
+}
+#s2-3A {
+
+}
+#s2-3B {
+
+}
+#s2-3C {
+
+}
+#s2-3D {
+
+}
+#s2-4A {
+
+}
+#s2-4B {
+
+}
+#s2-4C {
+
+}
+#s2-4D {
+
+}
+#s2-5A {
+
+}
+#s2-5B {
+
+}
+#s2-5C {
+
+}
+#s2-5D {
+
+}
+*/
+
+/*
+#section3 {
+
+}
+#s3-1 {
+
+}
+#s3-2 {
+
+}
+#s3-3 {
+
+}
+*/
+
+/* We should probably have a class for looking at mobile only things */
+.mobile-only{display:none;}
+
+@media (max-width:768px){
+.mobile-only{display:block!important;}
+}
+
+@media (max-width:767px){
+.desktop-only{display:none!important;}
+}
+
+/* We should also have a class for desktop only things */
+.desktop-only {
+    margin: auto;
+}
+
+/*! CSS Used fontfaces, pulled these from the original CSS. We'll probably have to figure out where and how to use these */
+@font-face{font-family:SegoeUI;src:local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.svg#web) format("svg");font-weight:400;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Light"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.svg#web) format("svg");font-weight:100;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Semilight"),local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.svg#web) format("svg");font-weight:200;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Semibold"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.svg#web) format("svg");font-weight:600;}
+@font-face{font-family:SegoeUI;src:local("Segoe UI Bold"),local("Segoe UI"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype"),url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.svg#web) format("svg");font-weight:700;}
+@font-face{font-family:MWF-MDL2;src:url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.woff) format("woff"),url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.ttf) format("truetype"),url(https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.21.3/fonts/MWFMDL2.svg) format("svg");}
+</style>
+</head>
+
+<body>
+<!-- Section 1 Hero Section -->
+<section id="section1">
+    <div id="s1-1">
+        <picture>
+            <source srcset="img/HeroBanner.jpg">
+            <img src="img/HeroBanner.jpg" alt="Hero Banner Image">
+        </picture>
+    </div>
+
+    <div>
+        <h1 id="s1-2">Integrated Solutions to get you up and running</h1>
+        <div id="s1-3">
+            <h3>Empower your business and accelerate your transformation projects with Integrated Solutions. These offers 
+                bring together best-of-breed technologies from Microsoft partners, along with consultation, deployment, and support 
+                provided by expert systems integrators.
+            </h3>
+            <h3>Discover the ease of a unified buying and implementation experience with Integrated Solutions today!</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2 Featured Partners -->
+<section class="theme-white">
+    <h2 id="s2-1">Featuring Integrated Solutions for Financial Services, Retail, and Healthcare Customers</h2>
+    <!-- Bundle 1-->
+    <div>
+        <h4 id="s2-2A">Customer 360 Powered by Zero2Hero™</h4>
+        <div id="s2-2B">
+            <picture>
+                <source srcset="img/c360_3.png">
+                <img src="img/c360_3.png" alt="Joint Value Prop Logo">
+            </picture>
+        </div>
+        <p id="2-2C">
+            A complete platform for customer 360 workloads that enables organizations to better understand their customers, learn from 
+            their behavior and deliver personalized interactions based on available data. Customer 360 powered by Zero2Hero™ builds a more comprehensive 
+            view of customers by leveraging data of all types, sizes, and velocities. It is designed to solve modern scale problems &amp; deliver rapid value.
+        </p>
+        <div id="s2-2D">
+            <a href="">
+                <span>CONTACT ME</span>
+            </a>
+        </div>
+        <a href="">Learn More ></a>
+    </div>
+    <!-- Bundle 2-->
+    <div>
+        <h4 id="s2-3A">Rapid Commerce</h4>
+        <div id="s2-3B">
+            <picture>
+                <source srcset="img/RapidCommerceImage.png">
+                <img src="img/RapidCommerceImage.png" alt="Rapid Commerce Logo">
+            </picture>
+        </div>
+        <p id="2-3C">
+            Rapid Commerce is the first fully cloud-native, microservices and headless architecture-based digital commerce platform accelerator for 
+            modern retailers. It combines the power of Azure and microservices with a proven, Agile-based approach to align and establish priorities, translate 
+            strategy into a plan and deliver a detailed roadmap that streamlines implementation and shortens time-to-value.
+        </p>
+        <div id="s2-3D">
+            <a href="">
+                <span>CONTACT ME</span>
+            </a>
+        </div>
+        <a href="">Learn More ></a>
+    </div>
+    <!-- Bundle 3-->
+    <div>
+        <h4 id="s2-4A">Credit Analytics</h4>
+        <div id="s2-4B">
+            <picture>
+                <source srcset="img/CreditAnalyticsLogo.png">
+                <img src="img/CreditAnalyticsLogo.png" alt="Credit Analytics Logo">
+            </picture>
+        </div>
+        <p id="2-4C">
+            Manage risk of loan portfolios with Credit Analytics to maximize risk-adjusted rate of return, minimize capital reserve requirements, and strengthen 
+            compliance.  Interactive Credit Analytics provides transparency into the characteristics and risks associated with each loan and loan segment to support 
+            setting thresholds and limits on each risk pool, and facilitates in analysis of concentration and risk. 
+        </p>
+        <div id="s2-4D">
+            <a href="">
+                <span>CONTACT ME</span>
+            </a>
+        </div>
+        <a href="">Learn More ></a>
+    </div>
+    <!-- Bundle 4-->
+    <div>
+        <h4 id="s2-5A">Healthcare Cloud Security Stack</h4>
+        <div id="s2-5B">
+            <picture>
+                <source srcset="img/HealthcareStackLogo.png">
+                <img src="img/HealthcareStackLogo.png" alt="Healthcare Stack Logo">
+            </picture>
+        </div>
+        <p id="2-5C">
+            Healthcare Cloud Security Stack (HCSS) is at the center of IT modernization helping entities use cloud services without losing focus on cybersecurity and 
+            HIPAA compliance. HCSS uses the Qualys Cloud Agent, Trend Micro Deep Security, and XentIT Executive Dashboard as a unified cloud threat management stack, 
+            eliminating the overhead of security automation and orchestration after migration to the cloud. 
+        </p>
+        <div id="s2-5D">
+            <a href="">
+                <span>CONTACT ME</span>
+            </a>
+        </div>
+        <a href="">Learn More ></a>
+    </div>
+</section>
+
+<!-- Section 3 Social Proof -->       
+<section class="theme-tan">
+    <div>
+        <h2 id="s3-1">Coming Soon</h2>
+        <p id="s3-2">Explore and discover more integrated solutions on the <a href="https://azuremarketplace.microsoft.com/en-us">Azure Marketplace</a> coming soon!</p>
+    </div>
+</section>
+</body>
